@@ -25,3 +25,19 @@ You can also add a timer on how often it loops (in seconds) here is an example b
 while wait(10) do
   test()
 end
+
+--Here is an example usage
+
+local brick = game:GetService("Workspace").part
+
+local function demo()
+  brick.Material = Brick
+  wait(2)
+  brick.Material = Neon
+end
+
+brick.Touched:Connect(demo)
+
+while true do
+  demo()
+end
