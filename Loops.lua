@@ -15,3 +15,13 @@ end            The end of the loop
 You can change the middle of the loop to anything
 
 ]]
+
+--[[
+
+You can also add a timer on how often it loops (in seconds) here is an example below
+
+]]
+
+while wait(10) do
+  test()
+end
