@@ -32,4 +32,10 @@ In the middle of the local function and end you put your code inside
 
 ]]
 
+--Here is another way to do functions
+
+name.Function:Connect(function()
+    print("Hello nameless function")
+end)
+
 --See Loops.lua to see how to loop functions
