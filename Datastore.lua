@@ -16,5 +16,7 @@ game.Players.PlayerAdded:Connect(function(plr)
 end)
 
 game.Players.PlayerRemoving:Connect(function(plr)
-    mainStore:SetAsync(plr.UserId.."cash",plr.leaderstats.Cash.Value)
+    local success, errorMsg = pcall(function()
+        mainStore:SetAsync(plr.UserId.."cash",plr.leaderstats.Cash.Value)
+    end)
 end)
